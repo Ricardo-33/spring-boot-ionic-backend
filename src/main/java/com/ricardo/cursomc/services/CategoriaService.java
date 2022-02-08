@@ -57,6 +57,7 @@ public class CategoriaService {
 		return repo.findAll(pageRequest);
 	}
 	
+	// Instância um obj Categoria a partir de um objDto
 	public Categoria fromDTO(CategoriaDTO objDto) {
 		return new Categoria(objDto.getId(), objDto.getNome());
 	}
